@@ -1,6 +1,7 @@
 package com.example.thesixsevenmod;
 
 import com.example.thesixsevenmod.block.ModBlocks;
+import com.example.thesixsevenmod.item.ModCreativeModeTabs;
 import com.example.thesixsevenmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -59,6 +60,8 @@ public class TheSixSevenMod {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+
+        ModCreativeModeTabs.register(modEventBus);
         ModBlocks.register(modEventBus);
 
         ITEMS.register(modEventBus);
@@ -82,6 +85,9 @@ public class TheSixSevenMod {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.POLISHED_GREENSTONE_BLOCK);
             event.accept(ModBlocks.RAW_GREENSTONE_BLOCK);
+            event.accept(ModBlocks.LEO_FULLER_BLOCK);
+            event.accept(ModBlocks.OLIVER_REGAN_COE_BLOCK);
+            event.accept(ModBlocks.HAYDEN_DAMAN_BLOCK);
         }
     }
 

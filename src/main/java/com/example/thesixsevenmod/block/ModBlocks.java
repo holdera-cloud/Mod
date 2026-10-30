@@ -50,4 +50,19 @@ public class ModBlocks {
                 .requiresCorrectToolForDrops()
                 .strength(3.0F, 3.0F)
                     .sound(SoundType.TUFF)));
+
+    public static final DeferredBlock<Block> LEO_FULLER_BLOCK =
+            registerBlock("leo_fuller_block", () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_BLUE)
+                    .strength(3.0F, 3.0F)));
+
+    public static final DeferredBlock<Block> OLIVER_REGAN_COE_BLOCK =
+            registerBlock("oliver_regan_coe_block", () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_ORANGE)
+                    .strength(3.0F, 3.0F)));
+
+    public static final DeferredBlock<Block> HAYDEN_DAMAN_BLOCK =
+            registerBlock("hayden_daman_block", () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_BROWN)
+                    .strength(3.0F, 3.0F)));
 }

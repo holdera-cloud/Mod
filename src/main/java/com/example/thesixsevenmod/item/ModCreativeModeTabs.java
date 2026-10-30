@@ -12,6 +12,7 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TheSixSevenMod.MODID);
 
     public static void register(IEventBus eventBus) {
+
         CREATIVE_MOD_TAB.register(eventBus);
     }
 }
