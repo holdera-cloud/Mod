@@ -1,10 +1,15 @@
 {
   "item.thesixsevenmod.greenstone": "Greenstone",
   "item.thesixsevenmod.raw_greenstone": "Raw Greenstone",
+  "item.thesixsevenmod.fried_egg": "Fried Egg",
+  "item.thesixsevenmod.kiwi_burger": "Kiwi Burger",
 
   "block.thesixsevenmod.polished_greenstone_block": "Polished Greenstone Block",
   "block.thesixsevenmod.raw_greenstone_block": "Raw Greenstone Block",
   "block.thesixsevenmod.leo_fuller_block": "Leo Fuller Block",
   "block.thesixsevenmod.oliver_regan_coe_block": "Oliver Regan-Coe Block",
-  "block.thesixsevenmod.hayden_daman_block": "Hayden Daman Block"
+  "block.thesixsevenmod.hayden_daman_block": "Hayden Daman Block",
+
+  "creativetab.thesixsevenmod.items": "The Six Seven Mod Items",
+  "creativetab.thesixsevenmod.blocks": "The Six Seven Mod Blocks"
 }

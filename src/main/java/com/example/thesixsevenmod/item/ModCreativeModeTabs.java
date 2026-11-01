@@ -1,10 +1,16 @@
 package com.example.thesixsevenmod.item;
 
 import com.example.thesixsevenmod.TheSixSevenMod;
+import com.example.thesixsevenmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.function.Supplier;
 
 public class ModCreativeModeTabs {
 
@@ -15,4 +21,32 @@ public class ModCreativeModeTabs {
 
         CREATIVE_MOD_TAB.register(eventBus);
     }
+
+    public static final Supplier<CreativeModeTab> ITEMS_TAB =
+            CREATIVE_MOD_TAB.register("thesixsevenmod_items",
+                    () -> CreativeModeTab.builder()
+                            .title(Component.translatable("creativetab.thesixsevenmod.items"))
+                            .icon(() -> new ItemStack(ModItems.GREENSTONE.get()))
+                            .displayItems(((itemDisplayParameters, output) -> {
+                                output.accept(ModItems.RAW_GREENSTONE);
+                                output.accept(ModItems.GREENSTONE);
+                                output.accept(ModItems.FRIED_EGG);
+                                output.accept(ModItems.KIWI_BURGER);
+                            }))
+                                    .build());
+
+    public static final Supplier<CreativeModeTab> BLOCKS_TAB =
+            CREATIVE_MOD_TAB.register("thesixsevenmod_blocks",
+                    () -> CreativeModeTab.builder()
+                            .title(Component.translatable("creativetab.thesixsevenmod.blocks"))
+                            .icon(() -> new ItemStack(ModBlocks.LEO_FULLER_BLOCK.get()))
+                            .displayItems(((itemDisplayParameters, output) -> {
+                                output.accept(ModBlocks.POLISHED_GREENSTONE_BLOCK);
+                                output.accept(ModBlocks.RAW_GREENSTONE_BLOCK);
+                                output.accept(ModBlocks.LEO_FULLER_BLOCK);
+                                output.accept(ModBlocks.OLIVER_REGAN_COE_BLOCK);
+                                output.accept(ModBlocks.HAYDEN_DAMAN_BLOCK);
+                            }))
+                            .withTabsBefore(ResourceLocation.fromNamespaceAndPath(TheSixSevenMod.MODID, "thesixsevenmod_items"))
+                            .build());
 }

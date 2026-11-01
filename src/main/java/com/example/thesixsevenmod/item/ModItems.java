@@ -1,8 +1,10 @@
 package com.example.thesixsevenmod.item;
 
 import com.example.thesixsevenmod.TheSixSevenMod;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -18,4 +20,21 @@ public class ModItems {
     public static final DeferredItem<Item> GREENSTONE = ITEMS.register("greenstone", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_GREENSTONE = ITEMS.register("raw_greenstone", () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> FRIED_EGG =
+            ITEMS.register("fried_egg", () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(5)
+                            .saturationModifier(1.2f)
+                            .build())
+            ));
+
+    public static final DeferredItem<Item> KIWI_BURGER =
+            ITEMS.register("kiwi_burger", () -> new Item(new Item.Properties()
+                    .stacksTo(16)
+                    .rarity(Rarity.UNCOMMON)
+                    .food(new FoodProperties.Builder()
+                            .nutrition(12)
+                            .saturationModifier(2.0f)
+                            .build())
+            ));
 }
