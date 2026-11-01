@@ -1,6 +1,14 @@
 package com.example.thesixsevenmod.item;
 
-public class ItemCharmOfResilience {
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 
-    //public ItemCharmOfResilience
+public class ItemCharmOfResilience extends Item {
+
+    public ItemCharmOfResilience(){
+        super(new Item.Properties()
+                .durability(100)
+                .rarity(Rarity.UNCOMMON)
+        );
+    }
 }

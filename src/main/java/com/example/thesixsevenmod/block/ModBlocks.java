@@ -5,6 +5,7 @@ import com.example.thesixsevenmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.HoneyBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -63,6 +64,12 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> HAYDEN_DAMAN_BLOCK =
             registerBlock("hayden_daman_block", () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_BROWN)
+                    .strength(3.0F, 3.0F)));
+
+
+    public static final DeferredBlock<WallrunBlock> WALLRUN_BLOCK =
+            registerBlock("wallrun_block", () -> new WallrunBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_BROWN)
                     .strength(3.0F, 3.0F)));
 }
