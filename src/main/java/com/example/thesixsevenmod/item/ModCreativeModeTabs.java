@@ -46,6 +46,7 @@ public class ModCreativeModeTabs {
                                 output.accept(ModBlocks.LEO_FULLER_BLOCK);
                                 output.accept(ModBlocks.OLIVER_REGAN_COE_BLOCK);
                                 output.accept(ModBlocks.HAYDEN_DAMAN_BLOCK);
+                                output.accept(ModBlocks.WALLRUN_BLOCK);
                             }))
                             .withTabsBefore(ResourceLocation.fromNamespaceAndPath(TheSixSevenMod.MODID, "thesixsevenmod_items"))
                             .build());
