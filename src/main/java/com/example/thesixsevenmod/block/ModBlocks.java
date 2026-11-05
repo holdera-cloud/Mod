@@ -72,4 +72,9 @@ public class ModBlocks {
             registerBlock("wallrun_block", () -> new WallrunBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_BROWN)
                     .strength(3.0F, 3.0F)));
+
+    public static final DeferredBlock<Block> MAGIC_BLOCK =
+            registerBlock("magic_block", () -> new MagicBlock(BlockBehaviour.Properties.of()
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()));
 }

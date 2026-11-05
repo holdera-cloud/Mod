@@ -91,7 +91,7 @@ public class WallrunBlock extends HoneyBlock{
     private void maybeDoSlideEffects(Level level, Entity entity) {
         if (doesEntityDoHoneyBlockSlideEffects(entity)) {
             if (level.random.nextInt(5) == 0) {
-                entity.playSound(SoundEvents.DONKEY_ANGRY, 1.0F, 1.0F);
+                entity.playSound(SoundEvents.CHAIN_STEP, 1.0F, 1.0F);
             }
 
             if (!level.isClientSide && level.random.nextInt(5) == 0) {

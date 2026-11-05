@@ -4,6 +4,7 @@
   "item.thesixsevenmod.fried_egg": "Fried Egg",
   "item.thesixsevenmod.kiwi_burger": "Kiwi Burger",
   "item.thesixsevenmod.charm_of_resilience": "Charm of Resilience",
+  "item.thesixsevenmod.ore_locator": "Ore Locator",
 
   "block.thesixsevenmod.polished_greenstone_block": "Polished Greenstone Block",
   "block.thesixsevenmod.raw_greenstone_block": "Raw Greenstone Block",
@@ -11,7 +12,11 @@
   "block.thesixsevenmod.oliver_regan_coe_block": "Oliver Regan-Coe Block",
   "block.thesixsevenmod.hayden_daman_block": "Hayden Daman Block",
   "block.thesixsevenmod.wallrun_block": "Wallrun Block",
+  "block.thesixsevenmod.magic_block": "Magic Block",
 
   "creativetab.thesixsevenmod.items": "The Six Seven Mod Items",
-  "creativetab.thesixsevenmod.blocks": "The Six Seven Mod Blocks"
+  "creativetab.thesixsevenmod.blocks": "The Six Seven Mod Blocks",
+
+  "tooltip.thesixsevenmod.magic_block.shift_down": "Use this block to turn certain green gems into blue ones",
+  "tooltip.thesixsevenmod.magic_block": "Press Shift for more information"
 }

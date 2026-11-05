@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "G": {
+      "item": "thesixsevenmod:polished_greenstone_block"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "NGN",
+    "GGG",
+    "INI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "thesixsevenmod:ore_locator"
+  }
+}

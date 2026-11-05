@@ -32,6 +32,8 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.GREENSTONE);
                                 output.accept(ModItems.FRIED_EGG);
                                 output.accept(ModItems.KIWI_BURGER);
+                                output.accept(ModItems.CHARM_OF_RESILIENCE);
+                                output.accept(ModItems.ORE_LOCATOR);
                             }))
                                     .build());
 
@@ -47,6 +49,7 @@ public class ModCreativeModeTabs {
                                 output.accept(ModBlocks.OLIVER_REGAN_COE_BLOCK);
                                 output.accept(ModBlocks.HAYDEN_DAMAN_BLOCK);
                                 output.accept(ModBlocks.WALLRUN_BLOCK);
+                                output.accept(ModBlocks.MAGIC_BLOCK);
                             }))
                             .withTabsBefore(ResourceLocation.fromNamespaceAndPath(TheSixSevenMod.MODID, "thesixsevenmod_items"))
                             .build());
