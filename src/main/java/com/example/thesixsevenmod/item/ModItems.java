@@ -37,4 +37,9 @@ public class ModItems {
                             .saturationModifier(2.0f)
                             .build())
             ));
+    public static final DeferredItem<Item> CHARM_OF_RESILIENCE =
+            ITEMS.register("charm_of_resilience", () -> new ItemCharmOfResilience());
+
+    public static final DeferredItem<Item> ORE_LOCATOR =
+            ITEMS.register("ore_locator", () -> new ItemOreLocator());
 }

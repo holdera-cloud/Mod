@@ -3,6 +3,13 @@ package com.example.thesixsevenmod;
 import com.example.thesixsevenmod.block.ModBlocks;
 import com.example.thesixsevenmod.item.ModCreativeModeTabs;
 import com.example.thesixsevenmod.item.ModItems;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -55,8 +62,39 @@ public class TheSixSevenMod {
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
+        NeoForge.EVENT_BUS.addListener(TheSixSevenMod::onPlayerDamage);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+    }
+
+    public static void onPlayerDamage(LivingIncomingDamageEvent event) {
+        if (event.isCanceled()) return;
+
+        if(event.getEntity() instanceof Player player){
+            ItemStack charm = player.getOffhandItem();
+            EquipmentSlot slot = EquipmentSlot.OFFHAND;
+            if(!charm.is(ModItems.CHARM_OF_RESILIENCE.get())){
+                charm = player.getMainHandItem();
+                slot =  EquipmentSlot.MAINHAND;
+            }
+            if(!charm.is(ModItems.CHARM_OF_RESILIENCE.get())){
+                return;
+            }
+            float chance = player.getRandom().nextFloat();
+            if(chance <= 0.2f){
+
+                event.setCanceled(true);
+                player.invulnerableTime = Math.max(player.invulnerableTime, 30);
+            }
+            player.level().playSound(
+                    null,
+                    player.blockPosition(),
+                    SoundEvents.SHIELD_BLOCK,
+                    SoundSource.PLAYERS,
+                    1.0f, 1.0f
+            );
+            charm.hurtAndBreak(1, player, slot);
+        }
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
