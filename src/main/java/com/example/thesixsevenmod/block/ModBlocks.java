@@ -1,11 +1,12 @@
 package com.example.thesixsevenmod.block;
 
 import com.example.thesixsevenmod.TheSixSevenMod;
+import com.example.thesixsevenmod.block.custom.MagicBlock;
+import com.example.thesixsevenmod.block.custom.WallrunBlock;
 import com.example.thesixsevenmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.HoneyBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;

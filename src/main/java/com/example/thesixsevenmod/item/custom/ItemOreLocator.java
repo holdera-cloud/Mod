@@ -1,4 +1,4 @@
-package com.example.thesixsevenmod.item;
+package com.example.thesixsevenmod.item.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;

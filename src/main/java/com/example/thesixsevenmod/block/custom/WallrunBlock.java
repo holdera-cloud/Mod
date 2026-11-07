@@ -1,4 +1,4 @@
-package com.example.thesixsevenmod.block;
+package com.example.thesixsevenmod.block.custom;
 
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;

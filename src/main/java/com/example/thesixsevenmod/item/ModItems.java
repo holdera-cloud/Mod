@@ -1,12 +1,12 @@
 package com.example.thesixsevenmod.item;
 
 import com.example.thesixsevenmod.TheSixSevenMod;
+import com.example.thesixsevenmod.item.custom.ItemCharmOfResilience;
+import com.example.thesixsevenmod.item.custom.ItemOreLocator;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 

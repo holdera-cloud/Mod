@@ -1,4 +1,4 @@
-package com.example.thesixsevenmod.block;
+package com.example.thesixsevenmod.block.custom;
 
 import com.example.thesixsevenmod.item.ModItems;
 import net.minecraft.client.gui.screens.Screen;

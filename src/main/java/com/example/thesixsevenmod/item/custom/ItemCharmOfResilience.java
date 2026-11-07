@@ -1,4 +1,4 @@
-package com.example.thesixsevenmod.item;
+package com.example.thesixsevenmod.item.custom;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
