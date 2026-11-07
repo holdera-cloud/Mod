@@ -32,7 +32,7 @@ public class WallrunBlock extends HoneyBlock{
 
     @Override
     public void fallOn(Level level, BlockState state, BlockPos pos, Entity entity, float fallDistance) {
-        entity.playSound(SoundEvents.HONEY_BLOCK_SLIDE, 1.0F, 1.0F);
+        entity.playSound(SoundEvents.STONE_FALL, 1.0F, 1.0F);
         if (!level.isClientSide) {
             level.broadcastEntityEvent(entity, (byte)54);
         }
