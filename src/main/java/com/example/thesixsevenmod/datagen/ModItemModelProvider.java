@@ -14,7 +14,9 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         basicItem(ModItems.RAW_GREENSTONE.get());
+        basicItem(ModItems.RAW_RUBY.get());
         basicItem(ModItems.GREENSTONE.get());
+        basicItem(ModItems.RUBY.get());
         basicItem(ModItems.CHARM_OF_RESILIENCE.get());
         basicItem(ModItems.FRIED_EGG.get());
         basicItem(ModItems.KIWI_BURGER.get());

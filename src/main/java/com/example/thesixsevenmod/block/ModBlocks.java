@@ -77,4 +77,18 @@ public class ModBlocks {
             registerBlock("magic_block", () -> new MagicBlock(BlockBehaviour.Properties.of()
                     .strength(2f)
                     .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> POLISHED_RUBY_BLOCK =
+            registerBlock("polished_ruby_block", () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_RED)
+                    .requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F)
+                    .sound(SoundType.TUFF)));
+
+    public static final DeferredBlock<Block> RAW_RUBY_BLOCK =
+            registerBlock("raw_ruby_block", () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_RED)
+                    .requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F)
+                    .sound(SoundType.TUFF)));
 }

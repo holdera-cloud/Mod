@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_polished_greenstone_block": {
+    "has_magic_block": {
       "conditions": {
         "items": [
           {
-            "items": "thesixsevenmod:polished_greenstone_block"
+            "items": "thesixsevenmod:magic_block"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_polished_greenstone_block"
+      "has_magic_block"
     ]
   ],
   "rewards": {

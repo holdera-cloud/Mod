@@ -20,6 +20,9 @@ public class ModItems {
     public static final DeferredItem<Item> GREENSTONE = ITEMS.register("greenstone", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_GREENSTONE = ITEMS.register("raw_greenstone", () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> RUBY = ITEMS.register("ruby", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RAW_RUBY = ITEMS.register("raw_ruby", () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> FRIED_EGG =
             ITEMS.register("fried_egg", () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder()

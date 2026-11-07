@@ -106,10 +106,14 @@ public class TheSixSevenMod {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.GREENSTONE);
             event.accept(ModItems.RAW_GREENSTONE);
+            event.accept(ModItems.RUBY);
+            event.accept(ModItems.RAW_RUBY);
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.POLISHED_GREENSTONE_BLOCK);
             event.accept(ModBlocks.RAW_GREENSTONE_BLOCK);
+            event.accept(ModBlocks.POLISHED_RUBY_BLOCK);
+            event.accept(ModBlocks.RAW_RUBY_BLOCK);
             event.accept(ModBlocks.LEO_FULLER_BLOCK);
             event.accept(ModBlocks.OLIVER_REGAN_COE_BLOCK);
             event.accept(ModBlocks.HAYDEN_DAMAN_BLOCK);

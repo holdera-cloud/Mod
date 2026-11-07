@@ -30,6 +30,8 @@ public class ModCreativeModeTabs {
                             .displayItems(((itemDisplayParameters, output) -> {
                                 output.accept(ModItems.RAW_GREENSTONE);
                                 output.accept(ModItems.GREENSTONE);
+                                output.accept(ModItems.RAW_RUBY);
+                                output.accept(ModItems.RUBY);
                                 output.accept(ModItems.FRIED_EGG);
                                 output.accept(ModItems.KIWI_BURGER);
                                 output.accept(ModItems.CHARM_OF_RESILIENCE);
@@ -45,6 +47,8 @@ public class ModCreativeModeTabs {
                             .displayItems(((itemDisplayParameters, output) -> {
                                 output.accept(ModBlocks.POLISHED_GREENSTONE_BLOCK);
                                 output.accept(ModBlocks.RAW_GREENSTONE_BLOCK);
+                                output.accept(ModBlocks.POLISHED_RUBY_BLOCK);
+                                output.accept(ModBlocks.RAW_RUBY_BLOCK);
                                 output.accept(ModBlocks.LEO_FULLER_BLOCK);
                                 output.accept(ModBlocks.OLIVER_REGAN_COE_BLOCK);
                                 output.accept(ModBlocks.HAYDEN_DAMAN_BLOCK);

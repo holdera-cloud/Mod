@@ -25,12 +25,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 ModBlocks.POLISHED_GREENSTONE_BLOCK.get(),
                 ModBlocks.RAW_GREENSTONE_BLOCK.get());
 
+        List<ItemLike> RUBY_SMELTABLES = List.of(ModItems.RAW_RUBY.get(),
+                ModBlocks.POLISHED_RUBY_BLOCK.get(),
+                ModBlocks.RAW_RUBY_BLOCK.get());
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.POLISHED_GREENSTONE_BLOCK.get())
                 .pattern("###")
                 .pattern("###")
                 .pattern("###")
-                .define('#', ModBlocks.POLISHED_GREENSTONE_BLOCK.get())
+                .define('#', ModItems.GREENSTONE.get())
                 .unlockedBy(getHasName(ModItems.GREENSTONE.get()), has(ModItems.GREENSTONE.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.POLISHED_RUBY_BLOCK.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.RUBY.get())
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
                 .save(pRecipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GREENSTONE.get(), 9)
@@ -39,12 +51,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pRecipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GREENSTONE.get(), 32)
-                .requires(ModBlocks.POLISHED_GREENSTONE_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.POLISHED_GREENSTONE_BLOCK.get()), has(ModBlocks.POLISHED_GREENSTONE_BLOCK.get()))
+                .requires(ModBlocks.MAGIC_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.MAGIC_BLOCK.get()), has(ModBlocks.MAGIC_BLOCK.get()))
                 .save(pRecipeOutput, TheSixSevenMod.MODID + ":greenstone_from_magic_block");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RUBY.get(), 9)
+                .requires(ModBlocks.POLISHED_RUBY_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.POLISHED_RUBY_BLOCK.get()), has(ModBlocks.POLISHED_RUBY_BLOCK.get()))
+                .save(pRecipeOutput);
 
         oreSmelting(pRecipeOutput, GREENSTONE_SMELTABLES, RecipeCategory.MISC, ModItems.GREENSTONE.get(), 0.25f, 200, "greenstone");
         oreBlasting(pRecipeOutput, GREENSTONE_SMELTABLES, RecipeCategory.MISC, ModItems.GREENSTONE.get(), 0.25f, 100, "greenstone");
+        oreSmelting(pRecipeOutput, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(), 0.25f, 200, "ruby");
+        oreBlasting(pRecipeOutput, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(), 0.25f, 100, "ruby");
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,

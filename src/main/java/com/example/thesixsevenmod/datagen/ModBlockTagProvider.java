@@ -20,11 +20,15 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.POLISHED_GREENSTONE_BLOCK.get())
-                .add(ModBlocks.RAW_GREENSTONE_BLOCK.get());
+                .add(ModBlocks.POLISHED_RUBY_BLOCK.get())
+                .add(ModBlocks.RAW_GREENSTONE_BLOCK.get())
+                .add(ModBlocks.RAW_RUBY_BLOCK.get());
 
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.POLISHED_GREENSTONE_BLOCK.get())
-                .add(ModBlocks.RAW_GREENSTONE_BLOCK.get());
+                .add(ModBlocks.POLISHED_RUBY_BLOCK.get())
+                .add(ModBlocks.RAW_GREENSTONE_BLOCK.get())
+                .add(ModBlocks.RAW_RUBY_BLOCK.get());
 
     }
 }

@@ -5,9 +5,13 @@
   "item.thesixsevenmod.kiwi_burger": "Kiwi Burger",
   "item.thesixsevenmod.charm_of_resilience": "Charm of Resilience",
   "item.thesixsevenmod.ore_locator": "Ore Locator",
+  "item.thesixsevenmod.ruby": "Ruby",
+  "item.thesixsevenmod.raw_ruby": "Raw Ruby",
 
   "block.thesixsevenmod.polished_greenstone_block": "Polished Greenstone Block",
   "block.thesixsevenmod.raw_greenstone_block": "Raw Greenstone Block",
+  "block.thesixsevenmod.polished_ruby_block": "Polished Ruby Block",
+  "block.thesixsevenmod.raw_ruby_block": "Raw Ruby Block",
   "block.thesixsevenmod.leo_fuller_block": "Leo Fuller Block",
   "block.thesixsevenmod.oliver_regan_coe_block": "Oliver Regan-Coe Block",
   "block.thesixsevenmod.hayden_daman_block": "Hayden Daman Block",

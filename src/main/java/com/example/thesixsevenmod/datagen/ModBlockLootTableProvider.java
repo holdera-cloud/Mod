@@ -28,6 +28,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(ModBlocks.POLISHED_GREENSTONE_BLOCK.get());
+        dropSelf(ModBlocks.POLISHED_RUBY_BLOCK.get());
         dropSelf(ModBlocks.LEO_FULLER_BLOCK.get());
         dropSelf(ModBlocks.OLIVER_REGAN_COE_BLOCK.get());
         dropSelf(ModBlocks.HAYDEN_DAMAN_BLOCK.get());
@@ -36,6 +37,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.RAW_GREENSTONE_BLOCK.get(),
                 block -> createMultipleOreDrops(ModBlocks.RAW_GREENSTONE_BLOCK.get(), ModItems.RAW_GREENSTONE.get(), 2, 5));
+        add(ModBlocks.RAW_RUBY_BLOCK.get(),
+                block -> createMultipleOreDrops(ModBlocks.RAW_RUBY_BLOCK.get(), ModItems.RAW_RUBY.get(), 2, 5));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
