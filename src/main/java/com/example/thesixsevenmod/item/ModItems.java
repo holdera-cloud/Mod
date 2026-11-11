@@ -4,8 +4,7 @@ import com.example.thesixsevenmod.TheSixSevenMod;
 import com.example.thesixsevenmod.item.custom.ItemCharmOfResilience;
 import com.example.thesixsevenmod.item.custom.ItemOreLocator;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -45,4 +44,26 @@ public class ModItems {
 
     public static final DeferredItem<Item> ORE_LOCATOR =
             ITEMS.register("ore_locator", () -> new ItemOreLocator());
+
+    public static final DeferredItem<SwordItem> RUBY_SWORD =
+            ITEMS.register("ruby_sword", () -> new SwordItem(ModToolTiers.RUBY, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.RUBY, 5, -2.4f))));
+
+    public static final DeferredItem<PickaxeItem> RUBY_PICKAXE =
+            ITEMS.register("ruby_pickaxe", () -> new PickaxeItem(ModToolTiers.RUBY, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.RUBY, 1, -2.8f))));
+
+    public static final DeferredItem<ShovelItem> RUBY_SHOVEL =
+            ITEMS.register("ruby_shovel", () -> new ShovelItem(ModToolTiers.RUBY, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.RUBY, 1.5f, -3.4f))));
+
+    public static final DeferredItem<AxeItem> RUBY_AXE =
+            ITEMS.register("ruby_axe", () -> new AxeItem(ModToolTiers.RUBY, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.RUBY, 6, -3.2f))));
+
+    public static final DeferredItem<HoeItem> RUBY_HOE =
+            ITEMS.register("ruby_hoe", () -> new HoeItem(ModToolTiers.RUBY, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.RUBY, 0, -3.0f))));
+
+
 }

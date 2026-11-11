@@ -7,6 +7,11 @@
   "item.thesixsevenmod.ore_locator": "Ore Locator",
   "item.thesixsevenmod.ruby": "Ruby",
   "item.thesixsevenmod.raw_ruby": "Raw Ruby",
+  "item.thesixsevenmod.ruby_sword": "Ruby Sword",
+  "item.thesixsevenmod.ruby_pickaxe": "Ruby Pickaxe",
+  "item.thesixsevenmod.ruby_shovel": "Ruby Shovel",
+  "item.thesixsevenmod.ruby_axe": "Ruby Axe",
+  "item.thesixsevenmod.ruby_hoe": "Ruby Hoe",
 
   "block.thesixsevenmod.polished_greenstone_block": "Polished Greenstone Block",
   "block.thesixsevenmod.raw_greenstone_block": "Raw Greenstone Block",

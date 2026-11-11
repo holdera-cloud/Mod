@@ -3,9 +3,11 @@ package com.example.thesixsevenmod.datagen;
 import com.example.thesixsevenmod.TheSixSevenMod;
 import com.example.thesixsevenmod.block.ModBlocks;
 import com.example.thesixsevenmod.item.ModItems;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
@@ -44,6 +46,70 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', ModItems.RUBY.get())
                 .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
                 .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_SWORD.get())
+                .pattern(" R ")
+                .pattern(" R ")
+                .pattern(" S ")
+                .define('R', ModItems.RUBY.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_PICKAXE.get())
+                .pattern("RRR")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('R', ModItems.RUBY.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_SHOVEL.get())
+                .pattern(" R ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('R', ModItems.RUBY.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_AXE.get())
+                .pattern(" RR")
+                .pattern(" SR")
+                .pattern(" S ")
+                .define('R', ModItems.RUBY.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pRecipeOutput, TheSixSevenMod.MODID + ":ruby_axe_right");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_AXE.get())
+                .pattern("RR ")
+                .pattern("RS ")
+                .pattern(" S ")
+                .define('R', ModItems.RUBY.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pRecipeOutput, TheSixSevenMod.MODID + ":ruby_axe_left");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_HOE.get())
+                .pattern(" RR")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('R', ModItems.RUBY.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pRecipeOutput, TheSixSevenMod.MODID + ":ruby_hoe_right");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_HOE.get())
+                .pattern("RR ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('R', ModItems.RUBY.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pRecipeOutput, TheSixSevenMod.MODID + ":ruby_hoe_left");
+
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GREENSTONE.get(), 9)
                 .requires(ModBlocks.POLISHED_GREENSTONE_BLOCK.get())

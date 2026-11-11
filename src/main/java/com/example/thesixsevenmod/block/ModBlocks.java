@@ -92,4 +92,5 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .strength(3.0F, 3.0F)
                     .sound(SoundType.TUFF)));
+
 }

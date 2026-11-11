@@ -36,6 +36,11 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.KIWI_BURGER);
                                 output.accept(ModItems.CHARM_OF_RESILIENCE);
                                 output.accept(ModItems.ORE_LOCATOR);
+                                output.accept(ModItems.RUBY_SWORD);
+                                output.accept(ModItems.RUBY_PICKAXE);
+                                output.accept(ModItems.RUBY_SHOVEL);
+                                output.accept(ModItems.RUBY_AXE);
+                                output.accept(ModItems.RUBY_HOE);
                             }))
                                     .build());
 

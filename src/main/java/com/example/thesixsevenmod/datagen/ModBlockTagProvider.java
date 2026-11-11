@@ -2,6 +2,7 @@ package com.example.thesixsevenmod.datagen;
 
 import com.example.thesixsevenmod.TheSixSevenMod;
 import com.example.thesixsevenmod.block.ModBlocks;
+import com.example.thesixsevenmod.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -30,5 +31,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.RAW_GREENSTONE_BLOCK.get())
                 .add(ModBlocks.RAW_RUBY_BLOCK.get());
 
+        tag(ModTags.Blocks.NEEDS_RUBY_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_RUBY_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .remove(ModTags.Blocks.NEEDS_RUBY_TOOL);
     }
 }
