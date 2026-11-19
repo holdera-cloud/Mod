@@ -1,6 +1,8 @@
 package com.example.thesixsevenmod.block;
 
 import com.example.thesixsevenmod.TheSixSevenMod;
+import com.example.thesixsevenmod.block.custom.MagicBlock;
+import com.example.thesixsevenmod.block.custom.WallrunBlock;
 import com.example.thesixsevenmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -50,4 +52,45 @@ public class ModBlocks {
                 .requiresCorrectToolForDrops()
                 .strength(3.0F, 3.0F)
                     .sound(SoundType.TUFF)));
+
+    public static final DeferredBlock<Block> LEO_FULLER_BLOCK =
+            registerBlock("leo_fuller_block", () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_BLUE)
+                    .strength(3.0F, 3.0F)));
+
+    public static final DeferredBlock<Block> OLIVER_REGAN_COE_BLOCK =
+            registerBlock("oliver_regan_coe_block", () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_ORANGE)
+                    .strength(3.0F, 3.0F)));
+
+    public static final DeferredBlock<Block> HAYDEN_DAMAN_BLOCK =
+            registerBlock("hayden_daman_block", () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_BROWN)
+                    .strength(3.0F, 3.0F)));
+
+
+    public static final DeferredBlock<WallrunBlock> WALLRUN_BLOCK =
+            registerBlock("wallrun_block", () -> new WallrunBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_BROWN)
+                    .strength(3.0F, 3.0F)));
+
+    public static final DeferredBlock<Block> MAGIC_BLOCK =
+            registerBlock("magic_block", () -> new MagicBlock(BlockBehaviour.Properties.of()
+                    .strength(2f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> POLISHED_RUBY_BLOCK =
+            registerBlock("polished_ruby_block", () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_RED)
+                    .requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F)
+                    .sound(SoundType.TUFF)));
+
+    public static final DeferredBlock<Block> RAW_RUBY_BLOCK =
+            registerBlock("raw_ruby_block", () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_RED)
+                    .requiresCorrectToolForDrops()
+                    .strength(3.0F, 3.0F)
+                    .sound(SoundType.TUFF)));
+
 }
