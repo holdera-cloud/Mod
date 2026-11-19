@@ -9,7 +9,7 @@
       "item": "thesixsevenmod:ruby"
     },
     "S": {
-      "item": "minecraft:stick"
+      "item": "thesixsevenmod:essence_placeholder"
     }
   },
   "pattern": [
@@ -18,7 +18,7 @@
     "SSS"
   ],
   "result": {
-    "count": 1,
+    "count": 6,
     "id": "thesixsevenmod:wallrun_block"
   }
 }

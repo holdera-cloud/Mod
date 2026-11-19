@@ -1,4 +1,4 @@
-// 1.21.1	2026-11-19T13:43:22.5283639	Recipes
+// 1.21.1	2026-11-20T09:59:51.6112418	Recipes
 f8033afc8767d595ba4c6f79413c796c7af6d343 data/thesixsevenmod/advancement/recipes/misc/greenstone.json
 cb708a78315bb7b7a81d311462b7ebe4e7af4223 data/thesixsevenmod/advancement/recipes/misc/greenstone_from_blasting_polished_greenstone_block.json
 2195f421ec233b41f4a08db875d8636c34d72e9f data/thesixsevenmod/advancement/recipes/misc/greenstone_from_blasting_raw_greenstone.json
@@ -48,4 +48,4 @@ c3b9901e33a549d484b8734b980819249d4bc758 data/thesixsevenmod/recipe/ruby_from_sm
 b1a90a4abfe3eb08a918155e4ee3b997113743a2 data/thesixsevenmod/recipe/ruby_pickaxe.json
 6555997e3e4310d8a802dbe394df0177be0e208e data/thesixsevenmod/recipe/ruby_shovel.json
 3d36b2b46378e5447e4279ab664444af5500eb3c data/thesixsevenmod/recipe/ruby_sword.json
-53d220120c58ead3348ba65e0d838deece8ef397 data/thesixsevenmod/recipe/wallrun_block.json
+c93449c304644cbeb66b7a1b145b4789629bae76 data/thesixsevenmod/recipe/wallrun_block.json
