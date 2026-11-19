@@ -40,7 +40,7 @@ public class MagicBlock extends Block {
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof ItemEntity itemEntity){
-            if(itemEntity.getItem().getItem() == ModItems.GREENSTONE.get()) {
+            if(itemEntity.getItem().getItem() == ModItems.RUBY.get()) {
                 itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
             }
         }

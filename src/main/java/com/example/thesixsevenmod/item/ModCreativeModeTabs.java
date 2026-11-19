@@ -41,6 +41,7 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.RUBY_SHOVEL);
                                 output.accept(ModItems.RUBY_AXE);
                                 output.accept(ModItems.RUBY_HOE);
+                                output.accept(ModItems.ESSENCE_PLACEHOLDER);
                             }))
                                     .build());
 

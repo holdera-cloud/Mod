@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "minecraft:honey_block"
+    },
+    "R": {
+      "item": "thesixsevenmod:ruby"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "RRR",
+    "RHR",
+    "SSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "thesixsevenmod:wallrun_block"
+  }
+}
